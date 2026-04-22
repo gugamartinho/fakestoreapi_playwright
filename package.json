@@ -1,0 +1,15 @@
+{
+  "name": "playwright-fakestoreapi-automation",
+  "version": "1.0.0",
+  "description": "E-commerce API automation portfolio using Playwright + TypeScript against FakeStoreAPI",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:verbose": "npx playwright test --reporter=list",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.43.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}

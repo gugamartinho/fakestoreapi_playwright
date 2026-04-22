@@ -1,0 +1,59 @@
+export interface Product {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+  image: string;
+  rating: {
+    rate: number;
+    count: number;
+  };
+}
+
+export interface User {
+  id: number;
+  username: string;
+  email: string;
+  password: string;
+  name: {
+    firstname: string;
+    lastname: string;
+  };
+  address: {
+    city: string;
+    street: string;
+    number: number;
+    zipcode: string;
+    geolocation: {
+      lat: string;
+      long: string;
+    };
+  };
+  phone: string;
+}
+
+export interface Cart {
+  id: number;
+  userId: number;
+  date: string;
+  products: Array<{
+    productId: number;
+    quantity: number;
+  }>;
+}
+
+export interface CartResponse {
+  id: number;
+  userId: number;
+  date: string;
+  products: Array<{
+    productId: number;
+    quantity: number;
+  }>;
+  __v: number;
+}
+
+export interface LoginResponse {
+  token: string;
+}
