@@ -107,7 +107,3 @@ npx playwright test -g "should return 200"
 # View HTML report
 npm run report
 ```
-
-## CI/CD
-
-Tests not able to run trought Actions due to API restrictions
