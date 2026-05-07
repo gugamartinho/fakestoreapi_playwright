@@ -89,6 +89,10 @@ npm install
 npx playwright install
 ```
 
+### Enrinoment
+
+create a .env file with valid credentials
+
 ### Running Tests
 
 ```bash
