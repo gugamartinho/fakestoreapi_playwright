@@ -110,25 +110,4 @@ npm run report
 
 ## CI/CD
 
-Tests run automatically on:
-- Every push to `main` or `develop` branch
-- Every Pull Request targeting `main`
-- Scheduled run Monday–Friday at 09:00 UTC
-
-HTML reports are uploaded as GitHub Actions artifacts and retained for 30 days.
-
-## Real-World Testing Scenarios
-
-This project covers realistic e-commerce API testing:
-
-- **Product Browsing** — list all products, filter by category, sort by price
-- **User Management** — create accounts, authenticate, update profiles
-- **Shopping Carts** — add items to cart, manage quantities, view user carts
-- **Data Integrity** — validate schemas, verify pricing, check ratings
-
-The test data mirrors actual usage patterns, making this portfolio directly applicable to production e-commerce APIs.
-
-## Author
-
-David Martinho — QA Automation Engineer  
-[LinkedIn](https://linkedin.com/in/YOUR_PROFILE) · [GitHub](https://github.com/YOUR_USERNAME)
+Tests not able to run trought Actions due to API restrictions
