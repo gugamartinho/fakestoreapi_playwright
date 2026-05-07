@@ -32,6 +32,9 @@ jobs:
 
       - name: Run API tests
         run: npm test
+        env:
+          VALID_LOGIN_USERNAME: ${{ secrets.VALID_LOGIN_USERNAME }}
+          VALID_LOGIN_PASSWORD: ${{ secrets.VALID_LOGIN_PASSWORD }}
 
       - name: Upload test report
         uses: actions/upload-artifact@v4

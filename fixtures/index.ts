@@ -2,11 +2,13 @@ import { test as base } from '@playwright/test';
 import { ProductsClient } from '../api-clients/ProductsClient';
 import { UsersClient } from '../api-clients/UsersClient';
 import { CartsClient } from '../api-clients/CartsClient';
+import dotenv from 'dotenv';
 
-// Test data
+dotenv.config();
+
 export const VALID_LOGIN = {
-  username: 'mor_2314',
-  password: '83r5^_',
+  username: process.env.VALID_LOGIN_USERNAME || '',
+  password: process.env.VALID_LOGIN_PASSWORD || '',
 };
 
 export const NEW_USER = {
