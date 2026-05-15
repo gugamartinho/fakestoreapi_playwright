@@ -85,7 +85,7 @@ playwright-fakestoreapi-automation/
 ```bash
 git clone https://github.com/gugamartinho/fakestoreapi_playwright.git
 cd fakestoreapi_playwright
-npm install
+npm ci
 npm install -D @playwright/test
 npx playwright install
 ```
